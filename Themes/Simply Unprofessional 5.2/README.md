@@ -1,12 +1,10 @@
-Simply Love (StepMania 5)
+Simply Unproffesional (StepMania 5.2)
 ======================
 
-![Arrow Logo](http://i.imgur.com/FyeguCQ.png)
+![Arrow Logo](http://i.imgur.com/wGbmFD3.png)
 ======================
 
-This is a recreation of hurtpiggypig's Simply Love SM3.95 theme made to now run in StepMania 5.
-
-I use the word "recreation" (as opposed to "port") because virtually no code was brought over from the SM3.95 counterpart.  My general process was to visually inspect the original SM3.95 theme, and recreate it screen by screen in SM5.
+This is a version of Dan Guzek's recreation of hurtpiggypig's Simply Love SM3.95 theme made for Stepmania 5 meant to make this theme look unproffesional
 
 For information on the original StepMania 3.95 version of Simply Love, check here:
 https://www.youtube.com/watch?v=OtcWy5m6-CQ
@@ -23,14 +21,9 @@ Installation
 --------------
 To install this theme, unzip it and move the resulting directory inside the *Themes* folder in your [StepMania user data directory](https://github.com/stepmania/stepmania/wiki/User-Data-Locations).  The resulting directory structure should [look like this](http://www.personal.psu.edu/djg270/sites/sm5/?open=11-4).
 
-Screenshots:
-------------
-Visit my imgur album for screenshots of this theme in action: [http://imgur.com/a/56wDq](http://imgur.com/a/56wDq)
-
 License:
 --------
-Copyright 2013-2016 Dan Guzek  
-See: [No License](http://choosealicense.com/licenses/no-license/)
+Copyright 2017-2017 cracingbozo7
 
 <hr>
 
@@ -56,3 +49,4 @@ ACKNOWLEDGEMENTS:
 * [freem](https://github.com/freem) -- I used AJ's StepMania 5 theme, [Moonlight](http://ssc.ajworld.net/?p=moonlight), as the foundation/starting point for this port.  While virtually none of Moonlight is left in Simply Love at this point, it helped immensely in providing the examples I needed when getting started.
 * [kyzentun](https://github.com/kyzentun) -- kyzentun answered many of my theming questions on IRC and even went out of his way to fix source-related issues that helped me out along my way.
 * the SM5 dev-team and IRC-frequenters -- Theming in SM5 is significantly easier than it is in 3.95.  Thank you, for that.  Thank you, shakesoda, Midiman, wolfman2000, et al!
+* [cracingbozo7](https://github.com/cracingbozo7) -- The unproffesionalizer
