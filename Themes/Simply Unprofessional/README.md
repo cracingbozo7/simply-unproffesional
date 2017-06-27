@@ -1,4 +1,4 @@
-Simply Unproffesional (StepMania 5.2)
+Simply Unproffesional (StepMania 5)
 ======================
 
 ![Arrow Logo](http://i.imgur.com/wGbmFD3.png)
