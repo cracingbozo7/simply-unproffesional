@@ -1,7 +1,7 @@
 return Def.ActorFrame{
 
 	--quad behind the ratemod, if there is one
-	Def.Quad{
+	LoadActor("music.png" )..{
 		InitCommand=cmd(diffuse,color("#1E282FCC"); xy,_screen.cx, 172; zoomto, 292.5,14 ),
 		OnCommand=function(self)
 			local MusicRate = SL.Global.ActiveModifiers.MusicRate

@@ -81,7 +81,7 @@ for player in ivalues(Players) do
 		end,
 
 		-- background quad for player stats
-		Def.Quad{
+		LoadActor("music2.png" )..{
 			Name="LowerQuad",
 			InitCommand=function(self)
 				self:diffuse(color("#1E282F")):y(_screen.cy+34):zoomto( 300,180 )

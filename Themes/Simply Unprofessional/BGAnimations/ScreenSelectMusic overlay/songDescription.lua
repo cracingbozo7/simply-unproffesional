@@ -19,7 +19,7 @@ local t = Def.ActorFrame{
 		CurrentTrailP2ChangedMessageCommand=cmd(playcommand,"Set"),
 
 		-- background for Artist, BPM, and Song Length
-		Def.Quad{
+		LoadActor("music.png")..{
 			InitCommand=function(self)
 				self:diffuse(color("#1e282f"))
 					:zoomto( IsUsingWideScreen() and 320 or 310, 48 )

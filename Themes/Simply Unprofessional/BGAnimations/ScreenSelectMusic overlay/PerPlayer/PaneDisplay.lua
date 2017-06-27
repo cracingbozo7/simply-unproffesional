@@ -167,7 +167,7 @@ local pd = Def.ActorFrame{
 }
 
 -- colored background for chart statistics
-pd[#pd+1] = Def.Quad{
+pd[#pd+1] = LoadActor("music.png")..{
 	Name="BackgroundQuad",
 	InitCommand=cmd(zoomto, _screen.w/2-10, _screen.h/8; y, _screen.h/3 + 15.33 ),
 	SetCommand=function(self, params)

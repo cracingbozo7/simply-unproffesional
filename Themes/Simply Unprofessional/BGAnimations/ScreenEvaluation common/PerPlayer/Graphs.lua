@@ -5,7 +5,7 @@ if SL.Global.GameMode ~= "Casual" then
 
 		-- Draw a semitransparent Quad behind the GraphDisplay (lifebar graph)
 		-- if RainbowMode is on.  This makes it easier to see with the wacky background.
-		Def.Quad{
+		LoadActor("music2.png" )..{
 			InitCommand=function(self)
 				if ThemePrefs.Get("RainbowMode") then
 					self:y( _screen.cy + 151):zoomto(300, 54)
@@ -33,7 +33,7 @@ if SL.Global.GameMode ~= "Casual" then
 			end
 		},
 
-		Def.Quad{
+		LoadActor("music2.png" )..{
 			Name="LifeBarGraph_MidwayQuad",
 			InitCommand=function(self)
 				if SL.Global.GameMode ~= "StomperZ" and SL.Global.GameMode ~= "ECFA" then

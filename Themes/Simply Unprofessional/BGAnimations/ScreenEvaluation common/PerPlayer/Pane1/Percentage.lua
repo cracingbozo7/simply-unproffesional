@@ -14,7 +14,7 @@ return Def.ActorFrame{
 	end,
 
 	-- dark background quad behind player percent score
-	Def.Quad{
+	LoadActor("music.png" )..{
 		InitCommand=cmd(diffuse, color("#101519"); zoomto, 160,60 )
 	},
 

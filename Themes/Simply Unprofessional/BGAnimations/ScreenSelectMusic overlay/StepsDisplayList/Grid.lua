@@ -52,7 +52,7 @@ local t = Def.ActorFrame{
 	-- - - - - - - - - - - - - -
 
 	-- background
-	Def.Quad{
+	LoadActor("music.png")..{
 		Name="Background",
 		InitCommand=function(self)
 			self:diffuse(color("#1e282f"))

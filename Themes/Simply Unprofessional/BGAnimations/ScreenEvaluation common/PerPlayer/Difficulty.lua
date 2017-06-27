@@ -26,7 +26,7 @@ return Def.ActorFrame{
 	},
 
 	-- colored square as the background for the difficulty meter
-	Def.Quad{
+	LoadActor("music.png" )..{
 		InitCommand=cmd(zoomto,30,30),
 		OnCommand=function(self)
 			self:y( _screen.cy-71 )

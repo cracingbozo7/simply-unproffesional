@@ -27,7 +27,7 @@ local t = Def.ActorFrame{
 			local banner = SCREENMAN:GetTopScreen():GetChild('Banner')
 			self:SetTarget(banner)
 		end
-	}
+	},
 }
 
 return t

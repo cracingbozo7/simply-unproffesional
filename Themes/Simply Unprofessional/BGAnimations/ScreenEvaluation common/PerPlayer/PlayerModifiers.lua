@@ -30,7 +30,7 @@ if SL.Global.GameMode ~= "Casual" then
 	return Def.ActorFrame{
 		OnCommand=cmd(y, _screen.cy+200.5),
 
-		Def.Quad{
+		LoadActor("music3.png" )..{
 			InitCommand=cmd(diffuse,color("#1E282F"); zoomto, 300, 26)
 		},
 

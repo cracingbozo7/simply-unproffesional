@@ -101,7 +101,7 @@ local t = Def.ActorFrame {
 	},
 
 	-- OptionsList Header Quad
-	Def.Quad {
+	LoadActor("music.png")..{
 		InitCommand=cmd(Center; zoomto,sortmenu.w+2,22; xy, _screen.cx, _screen.cy-92)
 	},
 	-- "Options" text
@@ -114,12 +114,8 @@ local t = Def.ActorFrame {
 		end
 	},
 
-	-- white border
-	Def.Quad {
-		InitCommand=cmd(Center; zoomto,sortmenu.w+2,sortmenu.h+2)
-	},
 	-- BG of the sortmenu box
-	Def.Quad {
+	LoadActor("music.png")..{
 		InitCommand=cmd(Center; zoomto,sortmenu.w,sortmenu.h; diffuse,Color.Black)
 	},
 	-- top mask

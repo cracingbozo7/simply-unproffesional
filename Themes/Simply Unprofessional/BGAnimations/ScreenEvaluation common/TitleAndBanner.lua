@@ -3,7 +3,7 @@ local banner_directory = ThemePrefs.Get("VisualTheme")
 return Def.ActorFrame{
 
 	-- quad behind the song/course title text
-	Def.Quad{
+	LoadActor("music2.png" )..{
 		InitCommand=cmd(diffuse,color("#1E282F"); xy,_screen.cx, 54.5; zoomto, 292.5,20),
 	},
 
