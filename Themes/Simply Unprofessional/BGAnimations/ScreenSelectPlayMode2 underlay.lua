@@ -88,24 +88,42 @@ local t = Def.ActorFrame{
 	-- gray backgrounds
 	Def.ActorFrame{
 		InitCommand=function(self) self:x(-188) end,
-		Def.Quad{
+		LoadActor("quad-replace.png")..{
 			InitCommand=function(self) self:diffuse(0.2,0.2,0.2,1):zoomto(90,38):y(-60) end,
 			OffCommand=function(self) self:sleep(0.3):linear(0.1):diffusealpha(0) end
 		},
-		Def.Quad{
+		LoadActor("quad-replace.png")..{
 			InitCommand=function(self) self:diffuse(0.2,0.2,0.2,1):zoomto(90,38):y(-20) end,
 			OffCommand=function(self) self:sleep(0.2):linear(0.1):diffusealpha(0) end
 		},
 	},
 
-	-- border
-	Def.Quad{
-		InitCommand=function(self) self:zoomto(302, 162):diffuse(1,1,1,1) end,
-		OffCommand=function(self) self:sleep(0.6):linear(0.2):cropleft(1) end
+	-- cursor to highlight the current choice
+	Def.ActorFrame{
+		Name="Cursor",
+		InitCommand=function(self)
+			cursor = self
+			self:x(-150):zoomtowidth( choices[cursor_index+1].ZoomWidth ) 
+			self:queuecommand("FirstPosition")
+		end,
+		FirstPositionCommand=function(self)
+			local index = SCREENMAN:GetTopScreen():GetSelectionIndex( GAMESTATE:GetMasterPlayerNumber() )
+			self:y( -60 + (40 * index) )
+		end,
+		
+		LoadActor("quad-replace.png")..{
+			InitCommand=function(self) self:zoomto(241, 42):diffuse(1,1,1,1):x(-1):halign(1) end,
+			OffCommand=function(self) self:sleep(0.4):linear(0.2):cropleft(1) end
+		},
+		LoadActor("quad-replace.png")..{
+			InitCommand=function(self) self:zoomto(240, 40):diffuse(0,0,0,1):halign(1) end,
+			OffCommand=function(self) self:sleep(0.4):linear(0.2):cropleft(1) end
+		}
 	},
+	
 	-- background
-	Def.Quad{
-		InitCommand=function(self) self:zoomto(300, 160):diffuse(0,0,0,1) end,
+	LoadActor("quad-replace2.png")..{
+		InitCommand=function(self) self:zoomto(310, 170):diffuse(0.2,0.2,0.2,1) end,
 		OffCommand=function(self) self:sleep(0.6):linear(0.2):cropleft(1) end
 	},
 
@@ -125,28 +143,6 @@ local t = Def.ActorFrame{
 				:linear(0.1):croptop(0)
 		end,
 		OffCommand=function(self) self:sleep(0.4):linear(0.2):diffusealpha(0) end
-	},
-	-- cursor to highlight the current choice
-	Def.ActorFrame{
-		Name="Cursor",
-		InitCommand=function(self)
-			cursor = self
-			self:x(-150):zoomtowidth( choices[cursor_index+1].ZoomWidth ) 
-			self:queuecommand("FirstPosition")
-		end,
-		FirstPositionCommand=function(self)
-			local index = SCREENMAN:GetTopScreen():GetSelectionIndex( GAMESTATE:GetMasterPlayerNumber() )
-			self:y( -60 + (40 * index) )
-		end,
-		
-		Def.Quad{
-			InitCommand=function(self) self:zoomto(241, 42):diffuse(1,1,1,1):x(-1):halign(1) end,
-			OffCommand=function(self) self:sleep(0.4):linear(0.2):cropleft(1) end
-		},
-		Def.Quad{
-			InitCommand=function(self) self:zoomto(240, 40):diffuse(0,0,0,1):halign(1) end,
-			OffCommand=function(self) self:sleep(0.4):linear(0.2):cropleft(1) end
-		}
 	},
 
 	-- Score

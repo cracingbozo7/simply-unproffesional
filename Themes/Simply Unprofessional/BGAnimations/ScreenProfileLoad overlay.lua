@@ -16,7 +16,7 @@ return Def.ActorFrame{
 		end
 	},
 
-	Def.Quad{
+	LoadActor("quad1.png")..{
 		Name="HorizontalWhiteSwoosh",
 		InitCommand=function(self)
 			self:horizalign(center):vertalign(middle)

@@ -1,4 +1,4 @@
-return Def.Quad{
+return LoadActor("footer.png")..{
 	Name="Footer",
 	InitCommand=function(self)
 		self:draworder(90)

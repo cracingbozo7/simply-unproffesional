@@ -1,7 +1,7 @@
 return Def.ActorFrame{
 	Name="Header",
 
-	Def.Quad{
+	LoadActor("header.png")..{
 		InitCommand=cmd(zoomto, _screen.w, 32; vertalign, top; diffuse,0.65,0.65,0.65,1; x, _screen.cx),
 	},
 
