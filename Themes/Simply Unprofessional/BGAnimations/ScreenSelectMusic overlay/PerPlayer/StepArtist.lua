@@ -46,7 +46,7 @@ return Def.ActorFrame{
 	end,
 
 	-- colored background quad
-	LoadActor("music.png")..{
+	LoadActor("music3.png")..{
 		Name="BackgroundQuad",
 		InitCommand=cmd(zoomto, 175, _screen.h/28; x, 113; diffuse, DifficultyIndexColor(1) ),
 		StepsHaveChangedCommand=function(self)
